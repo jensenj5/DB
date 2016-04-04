@@ -1,0 +1,5 @@
+Key: A key is a column, or a combination of columns, that uniquely identifies a row in a table. Each key can generate a unique index or a unique constraint in a target database.
+Primary key: unique keys that cannot be duplicated.
+Super key: super key is a collection of all of the unique columns that are unique
+Foreign key: is defined in a second table, but it refers to the primary key in the first table.
+Alternative key: Contain one or more columns whose values match a primary or alternate key in some other table.
