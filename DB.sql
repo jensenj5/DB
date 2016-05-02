@@ -37,7 +37,7 @@ CREATE TABLE `Admins` (
 
 LOCK TABLES `Admins` WRITE;
 /*!40000 ALTER TABLE `Admins` DISABLE KEYS */;
-INSERT INTO `Admins` VALUES ('Ibra','Cisse','icisse','BigBlack','87706 Washington AV'),('Jason','Jensen','JJensen','WhiteAndNerdy','78548 Wahsington AV');
+INSERT INTO `Admins` VALUES ('Ibra','Cisse','icisse','BigBlack','87706 Washington AV'),('Jason','Jensen','JJensen','Test','78548 Wahsington AV');
 /*!40000 ALTER TABLE `Admins` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -51,12 +51,9 @@ DROP TABLE IF EXISTS `Clients`;
 CREATE TABLE `Clients` (
   `First_Name` varchar(255) DEFAULT NULL,
   `Last_Name` varchar(255) DEFAULT NULL,
-  `User_Name` varchar(255) DEFAULT NULL,
+  `User_Name` varchar(255) NOT NULL,
   `password` varchar(255) DEFAULT NULL,
-  `address` varchar(255) DEFAULT NULL,
-  `state` varchar(2) DEFAULT NULL,
-  `zipCode` varchar(5) DEFAULT NULL,
-  `sex` char(1) DEFAULT NULL
+  PRIMARY KEY (`User_Name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -66,7 +63,7 @@ CREATE TABLE `Clients` (
 
 LOCK TABLES `Clients` WRITE;
 /*!40000 ALTER TABLE `Clients` DISABLE KEYS */;
-INSERT INTO `Clients` VALUES ('Smith','Anderson','sAnderson','qT1eNTBGYa','742 Broadway New Philadelphia','OH','44663','M'),('Clark','Wright','cWright','cedP8TMDeq','532 Highland Avenue Port Jefferson Station','NY','11776','M'),('Mitchell','Johnson','mJohnson','DdFebCbA2w','970 Valley Drive Miami Gardens','FL','33056','M'),('Thomas','Phillips','tPhillilps','Iu3hAaZDJH','901 7th Street Peoria','IL','61604','M'),('Taylor','Robinson','tRobinson','6G0oJdYaBN','788 Route 5 Muskegon','MI','49445','M'),('King','Carter','kCarter','7ukTrGVrRH','592 Valley Drive Dorchester','MA','02125','M'),('Collins','Rodriguez','cRodriguez','Uz7Q3c6n0s','111 Orchard Street Staten Island','NY','10305','F'),('Davis','Martin','dMartin','IJ8RgrLRUO','623 Route 70 Akron','OH','44312','M'),('Hall','Adams','hAdams','MOfXDmg9mQ','100 Broad Street Kent','OH','44240','M'),('Campbell','Miller','cMiller','rLTs1wMDFe','633 Lafayette Street Leland','NC','28451','M'),('Thompson','Allen','tAllen','uV2B04I8DH','926 Briarwood Court Easley','SC','29640','M'),('Baker','Parker','bParker','4H0ygospiC','547 Devon Court Trenton','NJ','08610','M'),('Wilson','Garcia','wGarcia','eI1oKxjtWM','315 Route 32 Stratford','CT','06614','F'),('Young','Gonzalez','yGonzalez','G8O0OmbZsT','34 Sycamore Drive Cottage Grove','MN','55016','M'),('Evans','Moorn','eMoorn','oY3jSdhcew','800 Harrison Street Cranford','NJ','07016','M'),('Martinez','Hernandez','mHernandez','O3YcnPvW9j','578 High Street Spartanburg','SC','29301','M'),('Nelson','Edwards','nEdwards','AXDUZqKgcR','287 West Avenue Orange','NJ','07050','M'),('Lopez','Perez','lPerez','NSjwCvVtAC','888 Berkshire Drive Lakeville','MN','55044','F'),('Williams','Jackson','wJackson','xJpFsadqBL','389 Fairview Avenue Bettendorf','IA','52722','F'),('Lewis','Hill','lHill','lKhuCvaBjq','652 Country Club Road Anderson','SC','29621','M'),('Roberts','Jones','rJones','LT38xN2InH','526 Lexington Drive Baldwin','NY','11510','M'),('White','Lee','sLee','o3HO7BjFcW','818 Highland Avenue Shelbyville','TN','37160','M'),('Scott','Turner','sTurner','kibnV0OzR4','65 Hilltop Road Evansville','IN','47711','M'),('Brown','Harris','bHarris','dF49JR5QHI','865 Canal Street Tullahoma','TN','37388','M'),('Walker','Green','wGreen','opAeVRUxoN','360 Academy Street Ponte Vedra Beach','FL','32082','F');
+INSERT INTO `Clients` VALUES ('Brown','Harris','bHarris','dF49JR5QHI'),('Baker','Parker','bParker','4H0ygospiC'),('Campbell','Miller','cMiller','rLTs1wMDFe'),('Collins','Rodriguez','cRodriguez','Uz7Q3c6n0s'),('Clark','Wright','cWright','cedP8TMDeq'),('Davis','Martin','dMartin','IJ8RgrLRUO'),('Evans','Moorn','eMoorn','oY3jSdhcew'),('Hall','Adams','hAdams','MOfXDmg9mQ'),('King','Carter','kCarter','7ukTrGVrRH'),('Lewis','Hill','lHill','lKhuCvaBjq'),('Lopez','Perez','lPerez','NSjwCvVtAC'),('Martinez','Hernandez','mHernandez','O3YcnPvW9j'),('Mitchell','Johnson','mJohnson','DdFebCbA2w'),('Nelson','Edwards','nEdwards','AXDUZqKgcR'),('Roberts','Jones','rJones','LT38xN2InH'),('Smith','Anderson','sAnderson','qT1eNTBGYa'),('White','Lee','sLee','o3HO7BjFcW'),('Scott','Turner','sTurner','kibnV0OzR4'),('Thompson','Allen','tAllen','uV2B04I8DH'),('Thomas','Phillips','tPhillilps','Iu3hAaZDJH'),('Taylor','Robinson','tRobinson','6G0oJdYaBN'),('Wilson','Garcia','wGarcia','eI1oKxjtWM'),('Walker','Green','wGreen','opAeVRUxoN'),('Williams','Jackson','wJackson','xJpFsadqBL'),('Young','Gonzalez','yGonzalez','G8O0OmbZsT');
 /*!40000 ALTER TABLE `Clients` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -126,7 +123,9 @@ DROP TABLE IF EXISTS `Reviews`;
 CREATE TABLE `Reviews` (
   `User_Name` varchar(255) DEFAULT NULL,
   `Review` varchar(255) DEFAULT NULL,
-  `Generic` varchar(255) DEFAULT NULL
+  `Generic` varchar(255) DEFAULT NULL,
+  KEY `User_Name` (`User_Name`),
+  CONSTRAINT `Reviews_ibfk_1` FOREIGN KEY (`User_Name`) REFERENCES `Clients` (`User_Name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -136,6 +135,7 @@ CREATE TABLE `Reviews` (
 
 LOCK TABLES `Reviews` WRITE;
 /*!40000 ALTER TABLE `Reviews` DISABLE KEYS */;
+INSERT INTO `Reviews` VALUES ('sAnderson','This medicine is super awesome for cold.','Pseudoephedrine'),('cWright','I took this medicine when I had headache, and it helped me out good.','Acetaminophen'),('mJohnson','This medicine is not for everyone who has issues with gas, but it worked for me.','Esomeprazole'),('tPhillilps','Had asthma, hate inhalers, but this medicine works really well for me.','Fluticasone'),('kCarter','Cut myself while working on my yard.  This antibiotic works well for me.','Minocycline'),('dMartin','My chest Pain are terrible for the most, none of the previous pills worked until this one.','Esomeprazole'),('wJackson','I always get better sleep with the muscle relaxation rub I get.','Acetaminophen'),('rJones','Always worked on cars and have muscle pain, but now I have something to releave it.','Acetaminophen');
 /*!40000 ALTER TABLE `Reviews` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -148,7 +148,9 @@ DROP TABLE IF EXISTS `Suggestions`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `Suggestions` (
   `User_Name` varchar(255) DEFAULT NULL,
-  `Suggestion` varchar(255) DEFAULT NULL
+  `Suggestion` varchar(255) DEFAULT NULL,
+  KEY `User_Name` (`User_Name`),
+  CONSTRAINT `Suggestions_ibfk_1` FOREIGN KEY (`User_Name`) REFERENCES `Clients` (`User_Name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -158,6 +160,7 @@ CREATE TABLE `Suggestions` (
 
 LOCK TABLES `Suggestions` WRITE;
 /*!40000 ALTER TABLE `Suggestions` DISABLE KEYS */;
+INSERT INTO `Suggestions` VALUES ('sTurner','The medicine for back pain should have a higher ranking.'),('bHarris','can you add medicine for bird flue'),('wGreen','Can you add different antibiotics for cleaning your immune system.'),('sLee','i am curious on some of the ingredients of the meds I am taking. Please list everything'),('lPerez','where the pharmacy at?');
 /*!40000 ALTER TABLE `Suggestions` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -193,4 +196,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-05-02  7:06:24
+-- Dump completed on 2016-05-02 11:20:19

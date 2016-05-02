@@ -19,11 +19,7 @@ create table Clients (
 First_Name VARCHAR(255),
 Last_Name VARCHAR(255),
 User_Name VARCHAR(255) NOT NULL Primary Key,
-password VARCHAR(255),
-address VARCHAR(255),
-state VARCHAR(2),
-zipCode VARCHAR(5),
-sex char(1)
+password VARCHAR(255)
 );
 
 load data infile '/tmp/Clients.txt' into table Clients;
@@ -55,12 +51,17 @@ Foreign Key(User_Name) REFERENCES Clients(User_Name),
 Suggestion VARCHAR(255)
 );
 
+load data infile '/tmp/suggestion.txt' into table Suggestions;
+
 create table Reviews (
 User_Name VARCHAR(255),
 Foreign Key(User_Name) REFERENCES Clients(User_Name),
 Review VARCHAR(255),
 Generic VARCHAR(255)
 );
+
+load data infile '/tmp/reviews.txt' into table Reviews;
+
 
 select * from  Admins;
 select * from  Clients;

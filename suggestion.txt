@@ -1,0 +1,5 @@
+sTurner	The medicine for back pain should have a higher ranking.
+bHarris	can you add medicine for bird flue
+wGreen	Can you add different antibiotics for cleaning your immune system.
+sLee	i am curious on some of the ingredients of the meds I am taking. Please list everything
+lPerez	where the pharmacy at?

@@ -51,6 +51,7 @@ public class MainGUI extends javax.swing.JFrame {
         btnSug = new java.awt.Button();
         diaReview = new javax.swing.JFrame();
         diaSug = new javax.swing.JFrame();
+        diaRegister = new javax.swing.JFrame();
         btnClientLogin = new java.awt.Button();
         btnAdminLogin = new java.awt.Button();
         btnSearch = new java.awt.Button();
@@ -105,18 +106,6 @@ public class MainGUI extends javax.swing.JFrame {
         btnLogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnLoginActionPerformed(evt);
-            }
-        });
-
-        txtUser.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtUserActionPerformed(evt);
-            }
-        });
-
-        txtPass.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtPassActionPerformed(evt);
             }
         });
 
@@ -251,6 +240,17 @@ public class MainGUI extends javax.swing.JFrame {
         );
         diaSugLayout.setVerticalGroup(
             diaSugLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 300, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout diaRegisterLayout = new javax.swing.GroupLayout(diaRegister.getContentPane());
+        diaRegister.getContentPane().setLayout(diaRegisterLayout);
+        diaRegisterLayout.setHorizontalGroup(
+            diaRegisterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 400, Short.MAX_VALUE)
+        );
+        diaRegisterLayout.setVerticalGroup(
+            diaRegisterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 300, Short.MAX_VALUE)
         );
 
@@ -494,6 +494,7 @@ WHERE EXISTS (
     private javax.swing.JFrame diaClient;
     private javax.swing.JFrame diaIncorrect;
     private javax.swing.JFrame diaLogin;
+    private javax.swing.JFrame diaRegister;
     private javax.swing.JFrame diaReview;
     private javax.swing.JFrame diaSearch;
     private javax.swing.JFrame diaSug;

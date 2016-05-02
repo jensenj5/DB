@@ -1,0 +1,29 @@
+List brand names for Symptom
+SELECT Rank, Brand FROM Medicine INNER JOIN Ranking ON Medicine.Generic = Ranking.Generic WHERE Ranking.Generic in (SELECT Generic from Symptoms WHERE Symptom = 'antibiotic') ORDER BY Rank DESC;
+
+Top ranked generic
+SELECT Rank, Generic FROM Ranking where Generic in (SELECT Generic from Symptoms WHERE Symptom = 'arthritis') ORDER BY Rank DESC LIMIT 1;
+
+Create Client User
+INSERT INTO Clients VALUES ('Demo', 'User', 'dUser', 'D3mo');
+
+Display created user
+SELECT * FROM Clients WHERE User_Name = 'dUser';
+
+Delete Client User
+DELETE FROM Clients WHERE User_Name = 'dUser'; 
+
+Write review
+INSERT INTO Reviews VALUES ('lHill', 'Demo review!', 'Diazepam');
+
+
+
+
+
+Create Admin User
+INSERT INTO Admins VALUES ('Admin', 'Istrator', 'dAdmin', 'Ad1n', 'Demo Address');
+
+SELECT * FROM Admins WHERE User_Name = 'dAdmin';
+
+SELECT * FROM Clients WHERE User_Name = 'dUser';
+
