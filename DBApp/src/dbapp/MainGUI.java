@@ -17,6 +17,7 @@ public class MainGUI extends javax.swing.JFrame {
     static Connection con;
     static Statement st;
     static ResultSet rs;
+    Boolean admin = false;
     
     public MainGUI() {
         initComponents();
@@ -37,9 +38,23 @@ public class MainGUI extends javax.swing.JFrame {
         txtSymptom = new java.awt.TextField();
         btnSearchGo = new java.awt.Button();
         diaLogin = new javax.swing.JFrame();
+        label2 = new java.awt.Label();
+        label3 = new java.awt.Label();
+        btnLogin = new java.awt.Button();
+        txtUser = new java.awt.TextField();
+        txtPass = new java.awt.TextField();
+        diaIncorrect = new javax.swing.JFrame();
+        label4 = new java.awt.Label();
+        btnIncorrectOK = new java.awt.Button();
+        diaClient = new javax.swing.JFrame();
+        btnReview = new java.awt.Button();
+        btnSug = new java.awt.Button();
+        diaReview = new javax.swing.JFrame();
+        diaSug = new javax.swing.JFrame();
         btnClientLogin = new java.awt.Button();
         btnAdminLogin = new java.awt.Button();
         btnSearch = new java.awt.Button();
+        btnRegister = new java.awt.Button();
 
         diaSearch.setMinimumSize(new java.awt.Dimension(462, 217));
 
@@ -79,18 +94,168 @@ public class MainGUI extends javax.swing.JFrame {
                 .addContainerGap(71, Short.MAX_VALUE))
         );
 
+        diaLogin.setMinimumSize(new java.awt.Dimension(400, 300));
+
+        label2.setText("Username:");
+
+        label3.setText("Password:");
+
+        btnLogin.setLabel("Login");
+        btnLogin.setName(""); // NOI18N
+        btnLogin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnLoginActionPerformed(evt);
+            }
+        });
+
+        txtUser.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtUserActionPerformed(evt);
+            }
+        });
+
+        txtPass.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtPassActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout diaLoginLayout = new javax.swing.GroupLayout(diaLogin.getContentPane());
         diaLogin.getContentPane().setLayout(diaLoginLayout);
         diaLoginLayout.setHorizontalGroup(
             diaLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(diaLoginLayout.createSequentialGroup()
+                .addGroup(diaLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(diaLoginLayout.createSequentialGroup()
+                        .addGap(60, 60, 60)
+                        .addGroup(diaLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(label3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(label2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(diaLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txtUser, javax.swing.GroupLayout.DEFAULT_SIZE, 125, Short.MAX_VALUE)
+                            .addComponent(txtPass, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addGroup(diaLoginLayout.createSequentialGroup()
+                        .addGap(169, 169, 169)
+                        .addComponent(btnLogin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(133, Short.MAX_VALUE))
         );
+
+        diaLoginLayout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {txtPass, txtUser});
+
         diaLoginLayout.setVerticalGroup(
             diaLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(diaLoginLayout.createSequentialGroup()
+                .addGap(67, 67, 67)
+                .addGroup(diaLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(label2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtUser, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(26, 26, 26)
+                .addGroup(diaLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(label3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtPass, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(45, 45, 45)
+                .addComponent(btnLogin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(101, Short.MAX_VALUE))
+        );
+
+        label4.setFont(new java.awt.Font("Dialog", 0, 36)); // NOI18N
+        label4.setText("Invalid login information!");
+
+        btnIncorrectOK.setLabel("button1");
+        btnIncorrectOK.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnIncorrectOKActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout diaIncorrectLayout = new javax.swing.GroupLayout(diaIncorrect.getContentPane());
+        diaIncorrect.getContentPane().setLayout(diaIncorrectLayout);
+        diaIncorrectLayout.setHorizontalGroup(
+            diaIncorrectLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, diaIncorrectLayout.createSequentialGroup()
+                .addContainerGap(84, Short.MAX_VALUE)
+                .addComponent(label4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(82, 82, 82))
+            .addGroup(diaIncorrectLayout.createSequentialGroup()
+                .addGap(268, 268, 268)
+                .addComponent(btnIncorrectOK, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        diaIncorrectLayout.setVerticalGroup(
+            diaIncorrectLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(diaIncorrectLayout.createSequentialGroup()
+                .addGap(57, 57, 57)
+                .addComponent(label4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 113, Short.MAX_VALUE)
+                .addComponent(btnIncorrectOK, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(88, 88, 88))
+        );
+
+        diaClient.setMinimumSize(new java.awt.Dimension(400, 300));
+
+        btnReview.setLabel("Review");
+        btnReview.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnReviewActionPerformed(evt);
+            }
+        });
+
+        btnSug.setLabel("Suggestion");
+        btnSug.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSugActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout diaClientLayout = new javax.swing.GroupLayout(diaClient.getContentPane());
+        diaClient.getContentPane().setLayout(diaClientLayout);
+        diaClientLayout.setHorizontalGroup(
+            diaClientLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(diaClientLayout.createSequentialGroup()
+                .addGap(140, 140, 140)
+                .addGroup(diaClientLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnSug, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnReview, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(156, Short.MAX_VALUE))
+        );
+
+        diaClientLayout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {btnReview, btnSug});
+
+        diaClientLayout.setVerticalGroup(
+            diaClientLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(diaClientLayout.createSequentialGroup()
+                .addGap(37, 37, 37)
+                .addComponent(btnReview, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(33, 33, 33)
+                .addComponent(btnSug, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(45, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout diaReviewLayout = new javax.swing.GroupLayout(diaReview.getContentPane());
+        diaReview.getContentPane().setLayout(diaReviewLayout);
+        diaReviewLayout.setHorizontalGroup(
+            diaReviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 400, Short.MAX_VALUE)
+        );
+        diaReviewLayout.setVerticalGroup(
+            diaReviewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 300, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout diaSugLayout = new javax.swing.GroupLayout(diaSug.getContentPane());
+        diaSug.getContentPane().setLayout(diaSugLayout);
+        diaSugLayout.setHorizontalGroup(
+            diaSugLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 400, Short.MAX_VALUE)
+        );
+        diaSugLayout.setVerticalGroup(
+            diaSugLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 300, Short.MAX_VALUE)
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMinimumSize(new java.awt.Dimension(400, 300));
 
         btnClientLogin.setLabel("Client Login");
         btnClientLogin.addActionListener(new java.awt.event.ActionListener() {
@@ -113,6 +278,13 @@ public class MainGUI extends javax.swing.JFrame {
             }
         });
 
+        btnRegister.setLabel("Register");
+        btnRegister.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRegisterActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -120,6 +292,7 @@ public class MainGUI extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(148, 148, 148)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnRegister, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnClientLogin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnAdminLogin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnSearch, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -137,7 +310,9 @@ public class MainGUI extends javax.swing.JFrame {
                 .addComponent(btnAdminLogin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(24, 24, 24)
                 .addComponent(btnSearch, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(108, Short.MAX_VALUE))
+                .addGap(31, 31, 31)
+                .addComponent(btnRegister, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(54, Short.MAX_VALUE))
         );
 
         pack();
@@ -145,10 +320,16 @@ public class MainGUI extends javax.swing.JFrame {
 
     private void btnClientLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClientLoginActionPerformed
         // TODO add your handling code here:
+        admin = false;
+        diaLogin.setLocationRelativeTo(null);
+        diaLogin.setVisible(true);
     }//GEN-LAST:event_btnClientLoginActionPerformed
 
     private void btnAdminLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAdminLoginActionPerformed
         // TODO add your handling code here:
+        admin = true;
+        diaLogin.setLocationRelativeTo(null);
+        diaLogin.setVisible(true);
     }//GEN-LAST:event_btnAdminLoginActionPerformed
 
     private void btnSearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSearchActionPerformed
@@ -188,6 +369,59 @@ WHERE EXISTS (
         }
          
     }//GEN-LAST:event_btnSearchGoActionPerformed
+
+    private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoginActionPerformed
+        // TODO add your handling code here:
+        String user = txtUser.getText();
+        String pass = txtPass.getText();
+        try{
+            if(admin){
+                rs = st.executeQuery("SELECT password FROM Admins WHERE User_Name = '" + user + "'");
+            }else{
+                rs = st.executeQuery("SELECT password FROM Clients WHERE User_Name = '" + user + "'");
+            }
+            rs.next();
+            String dbPass = rs.getString("password");
+            if(!dbPass.equals(pass)){
+                diaIncorrect.setLocationRelativeTo(null);
+                diaIncorrect.setVisible(true);
+            }else{
+                if(admin){
+                    
+                }else{
+                    diaClient.setLocationRelativeTo(null);
+                    diaClient.setVisible(true);
+                }
+            }
+        }catch (Exception e) {
+            System.err.println("Error: " + e.getMessage());
+            e.printStackTrace(System.err);
+        }
+        
+    }//GEN-LAST:event_btnLoginActionPerformed
+
+    private void btnIncorrectOKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIncorrectOKActionPerformed
+        // TODO add your handling code here:
+        diaIncorrect.dispose();
+    }//GEN-LAST:event_btnIncorrectOKActionPerformed
+
+    private void btnReviewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReviewActionPerformed
+        // TODO add your handling code here:
+        diaReview.setLocationRelativeTo(null);
+        diaReview.setVisible(true);
+    }//GEN-LAST:event_btnReviewActionPerformed
+
+    private void btnSugActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSugActionPerformed
+        // TODO add your handling code here:
+        diaSug.setLocationRelativeTo(null);
+        diaSug.setVisible(true);
+    }//GEN-LAST:event_btnSugActionPerformed
+
+    private void btnRegisterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegisterActionPerformed
+        // TODO add your handling code here:
+        diaRegister.setLocationRelativeTo(null);
+        diaRegister.setVisible(true);
+    }//GEN-LAST:event_btnRegisterActionPerformed
 
     /**
      * @param args the command line arguments
@@ -250,11 +484,25 @@ WHERE EXISTS (
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private java.awt.Button btnAdminLogin;
     private java.awt.Button btnClientLogin;
+    private java.awt.Button btnIncorrectOK;
+    private java.awt.Button btnLogin;
+    private java.awt.Button btnRegister;
+    private java.awt.Button btnReview;
     private java.awt.Button btnSearch;
     private java.awt.Button btnSearchGo;
+    private java.awt.Button btnSug;
+    private javax.swing.JFrame diaClient;
+    private javax.swing.JFrame diaIncorrect;
     private javax.swing.JFrame diaLogin;
+    private javax.swing.JFrame diaReview;
     private javax.swing.JFrame diaSearch;
+    private javax.swing.JFrame diaSug;
     private java.awt.Label label1;
+    private java.awt.Label label2;
+    private java.awt.Label label3;
+    private java.awt.Label label4;
+    private java.awt.TextField txtPass;
     private java.awt.TextField txtSymptom;
+    private java.awt.TextField txtUser;
     // End of variables declaration//GEN-END:variables
 }

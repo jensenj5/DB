@@ -18,7 +18,7 @@ load data infile '/tmp/Admins.txt' into table Admins;
 create table Clients (
 First_Name VARCHAR(255),
 Last_Name VARCHAR(255),
-User_Name VARCHAR(255),
+User_Name VARCHAR(255) NOT NULL Primary Key,
 password VARCHAR(255),
 address VARCHAR(255),
 state VARCHAR(2),
@@ -51,11 +51,13 @@ load data infile '/tmp/Med.txt' into table Symptoms;
 
 create table Suggestions (
 User_Name VARCHAR(255),
+Foreign Key(User_Name) REFERENCES Clients(User_Name),
 Suggestion VARCHAR(255)
 );
 
 create table Reviews (
 User_Name VARCHAR(255),
+Foreign Key(User_Name) REFERENCES Clients(User_Name),
 Review VARCHAR(255),
 Generic VARCHAR(255)
 );
