@@ -13,5 +13,5 @@ Etanercept	7
 Infliximab	4
 Duloxetine	5
 Insulin Glargine	6
-Tiotropium	9
+Tiotropium	7
 Sitagliptin	6

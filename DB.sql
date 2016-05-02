@@ -89,7 +89,7 @@ CREATE TABLE `Medicine` (
 
 LOCK TABLES `Medicine` WRITE;
 /*!40000 ALTER TABLE `Medicine` DISABLE KEYS */;
-INSERT INTO `Medicine` VALUES ('Pseudoephedrine','Chlor Trimeton Nasal Decongestant'),('Pseudoephedrine','Contac Cold'),('Pseudoephedrine','Drixoral Decongestant Non-Drowsy'),('Pseudoephedrine','Elixsure Decongestant'),('Pseudoephedrine','Entex'),('Pseudoephedrine','Genaphed'),('Pseudoephedrine','Kid Kare Drops'),('Pseudoephedrine','Nasofed'),('Pseudoephedrine','Seudotabs'),('Pseudoephedrine','Silfedrine'),('Pseudoephedrine','Sudafed'),('Pseudoephedrine','Sudafed 12-Hour'),('Pseudoephedrine','Sudafed 24-Hour'),('Pseudoephedrine','Sudafed Children\'s Nasal Decongestant'),('Pseudoephedrine','Sudodrin'),('Pseudoephedrine','SudoGest'),('Pseudoephedrine','SudoGest 12 Hour'),('Pseudoephedrine','Suphedrin'),('Pseudoephedrine','Triaminic Softchews Allergy Congestion'),('Pseudoephedrine','Unifed'),('Esomeprazole','Esomeprazole Strontium'),('Esomeprazole','NexIUM'),('Diazepam','VALIUM'),('Acetaminophen','Actamin'),('Acetaminophen','Apra'),('Acetaminophen','Mapap'),('Acetaminophen','Q-Pap'),('Acetaminophen','Tactinal'),('Acetaminophen','Tempra'),('Acetaminophen','Tycolene'),('Acetaminophen','Tylenol'),('Acetaminophen','Vitapap'),('Minocycline','Dynacin'),('Minocycline','Minocin'),('Minocycline','Minocin PAC'),('Minocycline','Solodyn'),('Minocycline','Vectrin'),('Minocycline','Myrac'),('Haloperidol Haldol',NULL),('Cephalexin','Keflex'),('Cephalexin','Panixine'),('Cephalexin','Biocef'),('Cephalexin','Zartan'),('Aripiprazole','Abilify'),('Aripiprazole','Abilify Discmelt'),('Aripiprazole','Abilify Maintena'),('Aripiprazole','Aristada'),('Adalimumab','Humira'),('Adalimumab','Humira Pen'),('Adalimumab','Humira Pen Crohns Disease/Ulcerative Colitis Starter Package'),('Adalimumab','Humira Pen Psoriasis Starter Package'),('Adalimumab','Humira Pediatric'),('Adalimumab','Humira Pediatric Crohn\'s Disease Starter Pack'),('Rosuvastatin','Crestor'),('Fluticasone','Advair Diskus'),('Fluticasone','Advair HFA'),('Etanercept','Enbrel'),('Etanercept','Enbrel Prefilled Syringe'),('Etanercept','Enbrel SureClick'),('Infliximab','Remicade'),('Infliximab','Inflectra'),('Duloxetine','Cymbalta'),('Duloxetine','Irenka'),('Insulin Glargine','Basaglar KwikPen'),('Insulin Glargine','Lantus'),('Insulin Glargine','Lantus Solostar Pen'),('Insulin Glargine','Toujeo SoloStar'),('Insulin Glargine','Lantus OptiClik Cartridge'),('Tiotropium','Spiriva'),('Tiotropium','Spiriva Respimat 14 Dose'),('Tiotropium','Spiriva Respimat 30 Dose'),('Tiotropium','Spiriva Respimat 28'),('Tiotropium','Spiriva Respimat'),('Sitagliptin','Januvia');
+INSERT INTO `Medicine` VALUES ('Pseudoephedrine','Chlor Trimeton Nasal Decongestant'),('Pseudoephedrine','Contac Cold'),('Pseudoephedrine','Drixoral Decongestant Non-Drowsy'),('Pseudoephedrine','Elixsure Decongestant'),('Pseudoephedrine','Entex'),('Pseudoephedrine','Genaphed'),('Pseudoephedrine','Kid Kare Drops'),('Pseudoephedrine','Nasofed'),('Pseudoephedrine','Seudotabs'),('Pseudoephedrine','Silfedrine'),('Pseudoephedrine','Sudafed'),('Pseudoephedrine','Sudafed 12-Hour'),('Pseudoephedrine','Sudafed 24-Hour'),('Pseudoephedrine','Sudafed Children\'s Nasal Decongestant'),('Pseudoephedrine','Sudodrin'),('Pseudoephedrine','SudoGest'),('Pseudoephedrine','SudoGest 12 Hour'),('Pseudoephedrine','Suphedrin'),('Pseudoephedrine','Triaminic Softchews Allergy Congestion'),('Pseudoephedrine','Unifed'),('Esomeprazole','Esomeprazole Strontium'),('Esomeprazole','NexIUM'),('Diazepam','VALIUM'),('Acetaminophen','Actamin'),('Acetaminophen','Apra'),('Acetaminophen','Mapap'),('Acetaminophen','Q-Pap'),('Acetaminophen','Tactinal'),('Acetaminophen','Tempra'),('Acetaminophen','Tycolene'),('Acetaminophen','Tylenol'),('Acetaminophen','Vitapap'),('Minocycline','Dynacin'),('Minocycline','Minocin'),('Minocycline','Minocin PAC'),('Minocycline','Solodyn'),('Minocycline','Vectrin'),('Minocycline','Myrac'),('Haloperidol','Haldol'),('Cephalexin','Keflex'),('Cephalexin','Panixine'),('Cephalexin','Biocef'),('Cephalexin','Zartan'),('Aripiprazole','Abilify'),('Aripiprazole','Abilify Discmelt'),('Aripiprazole','Abilify Maintena'),('Aripiprazole','Aristada'),('Adalimumab','Humira'),('Adalimumab','Humira Pen'),('Adalimumab','Humira Pen Crohns Disease/Ulcerative Colitis Starter Package'),('Adalimumab','Humira Pen Psoriasis Starter Package'),('Adalimumab','Humira Pediatric'),('Adalimumab','Humira Pediatric Crohn\'s Disease Starter Pack'),('Rosuvastatin','Crestor'),('Fluticasone','Advair Diskus'),('Fluticasone','Advair HFA'),('Etanercept','Enbrel'),('Etanercept','Enbrel Prefilled Syringe'),('Etanercept','Enbrel SureClick'),('Infliximab','Remicade'),('Infliximab','Inflectra'),('Duloxetine','Cymbalta'),('Duloxetine','Irenka'),('Insulin Glargine','Basaglar KwikPen'),('Insulin Glargine','Lantus'),('Insulin Glargine','Lantus Solostar Pen'),('Insulin Glargine','Toujeo SoloStar'),('Insulin Glargine','Lantus OptiClik Cartridge'),('Tiotropium','Spiriva'),('Tiotropium','Spiriva Respimat 14 Dose'),('Tiotropium','Spiriva Respimat 30 Dose'),('Tiotropium','Spiriva Respimat 28'),('Tiotropium','Spiriva Respimat'),('Sitagliptin','Januvia');
 /*!40000 ALTER TABLE `Medicine` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -112,7 +112,7 @@ CREATE TABLE `Ranking` (
 
 LOCK TABLES `Ranking` WRITE;
 /*!40000 ALTER TABLE `Ranking` DISABLE KEYS */;
-INSERT INTO `Ranking` VALUES ('Pseudoephedrine',8),('Esomeprazole',5),('Diazepam',6),('Acetaminophen',9),('Minocycline',6),('Haloperidol',8),('Cephalexin',9),('Aripiprazole',10),('Adalimumab',7),('Rosuvastatin',6),('Fluticasone',9),('Etanercept',7),('Infliximab',4),('Duloxetine',5),('Insulin Glargine',6),('Tiotropium',9),('Sitagliptin',6);
+INSERT INTO `Ranking` VALUES ('Pseudoephedrine',8),('Esomeprazole',5),('Diazepam',6),('Acetaminophen',9),('Minocycline',6),('Haloperidol',8),('Cephalexin',9),('Aripiprazole',10),('Adalimumab',7),('Rosuvastatin',6),('Fluticasone',9),('Etanercept',7),('Infliximab',4),('Duloxetine',5),('Insulin Glargine',6),('Tiotropium',7),('Sitagliptin',6);
 /*!40000 ALTER TABLE `Ranking` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -125,7 +125,8 @@ DROP TABLE IF EXISTS `Reviews`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `Reviews` (
   `User_Name` varchar(255) DEFAULT NULL,
-  `Review` varchar(255) DEFAULT NULL
+  `Review` varchar(255) DEFAULT NULL,
+  `Generic` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -192,4 +193,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-05-02  3:56:23
+-- Dump completed on 2016-05-02  7:06:24

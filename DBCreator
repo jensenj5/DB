@@ -5,59 +5,59 @@ create database DB;
 use DB;
 
 create table Admins (
-First_Name Varchar(255),
-Last_Name Varchar(255),
-User_Name Varchar(255),
-Password Varchar(255),
-Address Varchar(255)
+First_Name VARCHAR(255),
+Last_Name VARCHAR(255),
+User_Name VARCHAR(255),
+Password VARCHAR(255),
+Address VARCHAR(255)
 );
 
 load data infile '/tmp/Admins.txt' into table Admins;
 
 
 create table Clients (
-First_Name Varchar(255),
-Last_Name Varchar(255),
-User_Name Varchar(255),
-password Varchar(255),
-address Varchar(255),
-state Varchar(2),
-zipCode Varchar(5),
+First_Name VARCHAR(255),
+Last_Name VARCHAR(255),
+User_Name VARCHAR(255),
+password VARCHAR(255),
+address VARCHAR(255),
+state VARCHAR(2),
+zipCode VARCHAR(5),
 sex char(1)
 );
 
 load data infile '/tmp/Clients.txt' into table Clients;
 
-
-create table Medicine (
-Generic Varchar(255),
-Brand Varchar(255)
-);
-
-load data infile '/tmp/Med2.txt' into table Medicine;
-
-create table Symptoms (
-Symptom Varchar(255),
-Generic Varchar(255)
-);
-
-load data infile '/tmp/Med.txt' into table Symptoms;
-
 create table Ranking (
-Generic Varchar(255),
+Generic VARCHAR(255),
 Rank int
 );
 
 load data infile '/tmp/Ranking.txt' into table Ranking;
 
+create table Medicine (
+Generic VARCHAR(255),
+Brand VARCHAR(255)
+);
+
+load data infile '/tmp/Med2.txt' into table Medicine;
+
+create table Symptoms (
+Symptom VARCHAR(255),
+Generic VARCHAR(255)
+);
+
+load data infile '/tmp/Med.txt' into table Symptoms;
+
 create table Suggestions (
-User_Name Varchar(255),
-Suggestion Varchar(255)
+User_Name VARCHAR(255),
+Suggestion VARCHAR(255)
 );
 
 create table Reviews (
-User_Name Varchar(255),
-Review Varchar(255)
+User_Name VARCHAR(255),
+Review VARCHAR(255),
+Generic VARCHAR(255)
 );
 
 select * from  Admins;
