@@ -1,0 +1,18 @@
+cold	Pseudoephedrine
+heartburn	Esomeprazole
+anxiety	Diazepam
+pain relief	Acetaminophen
+fever reducer	Acetaminophen
+antibiotic	Minocycline
+antibiotic	Cephalexin
+antipsychotic	Haloperidol
+antipsychotic	Aripiprazole
+arthritis	Adalimumab
+arthritis	Etanercept
+arthritis	Infliximab
+asthma	Fluticasone
+asthma	Tiotropium
+diabetes	Insulin Glargine
+diabetes	Sitagliptin
+cholesterol	Rosuvastatin
+depression	Duloxetine

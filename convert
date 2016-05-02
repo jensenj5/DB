@@ -1,0 +1,7 @@
+echo "med"
+read med
+sed -i -e 's/, /\n/g' temp2
+sed -i -e "s/^/$med\t/" temp2
+sed -i -e '$a\' temp2
+cat temp2 >> Med2.txt
+

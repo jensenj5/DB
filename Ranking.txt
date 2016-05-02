@@ -1,0 +1,17 @@
+Pseudoephedrine	8
+Esomeprazole	5
+Diazepam	6
+Acetaminophen	9
+Minocycline	6
+Haloperidol	8
+Cephalexin	9
+Aripiprazole	10
+Adalimumab	7
+Rosuvastatin	6
+Fluticasone	9
+Etanercept	7
+Infliximab	4
+Duloxetine	5
+Insulin Glargine	6
+Tiotropium	9
+Sitagliptin	6

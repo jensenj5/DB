@@ -1,0 +1,69 @@
+drop database DB;
+
+create database DB;
+
+use DB;
+
+create table Admins (
+First_Name Varchar(255),
+Last_Name Varchar(255),
+User_Name Varchar(255),
+Password Varchar(255),
+Address Varchar(255)
+);
+
+load data infile '/tmp/Admins.txt' into table Admins;
+
+
+create table Clients (
+First_Name Varchar(255),
+Last_Name Varchar(255),
+User_Name Varchar(255),
+password Varchar(255),
+address Varchar(255),
+state Varchar(2),
+zipCode Varchar(5),
+sex char(1)
+);
+
+load data infile '/tmp/Clients.txt' into table Clients;
+
+
+create table Medicine (
+Generic Varchar(255),
+Brand Varchar(255)
+);
+
+load data infile '/tmp/Med2.txt' into table Medicine;
+
+create table Symptoms (
+Symptom Varchar(255),
+Generic Varchar(255)
+);
+
+load data infile '/tmp/Med.txt' into table Symptoms;
+
+create table Ranking (
+Generic Varchar(255),
+Rank int
+);
+
+load data infile '/tmp/Ranking.txt' into table Ranking;
+
+create table Suggestions (
+User_Name Varchar(255),
+Suggestion Varchar(255)
+);
+
+create table Reviews (
+User_Name Varchar(255),
+Review Varchar(255)
+);
+
+select * from  Admins;
+select * from  Clients;
+select * from  Medicine;
+select * from  Ranking;
+select * from  Symptoms;
+select * from  Reviews;
+select * from  Suggestions;

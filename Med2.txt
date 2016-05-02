@@ -1,0 +1,74 @@
+Pseudoephedrine	Chlor Trimeton Nasal Decongestant
+Pseudoephedrine	Contac Cold
+Pseudoephedrine	Drixoral Decongestant Non-Drowsy
+Pseudoephedrine	Elixsure Decongestant
+Pseudoephedrine	Entex
+Pseudoephedrine	Genaphed
+Pseudoephedrine	Kid Kare Drops
+Pseudoephedrine	Nasofed
+Pseudoephedrine	Seudotabs
+Pseudoephedrine	Silfedrine
+Pseudoephedrine	Sudafed
+Pseudoephedrine	Sudafed 12-Hour
+Pseudoephedrine	Sudafed 24-Hour
+Pseudoephedrine	Sudafed Children's Nasal Decongestant
+Pseudoephedrine	Sudodrin
+Pseudoephedrine	SudoGest
+Pseudoephedrine	SudoGest 12 Hour
+Pseudoephedrine	Suphedrin
+Pseudoephedrine	Triaminic Softchews Allergy Congestion
+Pseudoephedrine	Unifed
+Esomeprazole	Esomeprazole Strontium
+Esomeprazole	NexIUM
+Diazepam	VALIUM
+Acetaminophen	Actamin
+Acetaminophen	Apra
+Acetaminophen	Mapap
+Acetaminophen	Q-Pap
+Acetaminophen	Tactinal
+Acetaminophen	Tempra
+Acetaminophen	Tycolene
+Acetaminophen	Tylenol
+Acetaminophen	Vitapap
+Minocycline	Dynacin
+Minocycline	Minocin
+Minocycline	Minocin PAC
+Minocycline	Solodyn
+Minocycline	Vectrin
+Minocycline	Myrac
+Haloperidol Haldol
+Cephalexin	Keflex
+Cephalexin	Panixine
+Cephalexin	Biocef
+Cephalexin	Zartan
+Aripiprazole	Abilify
+Aripiprazole	Abilify Discmelt
+Aripiprazole	Abilify Maintena
+Aripiprazole	Aristada
+Adalimumab	Humira
+Adalimumab	Humira Pen
+Adalimumab	Humira Pen Crohns Disease/Ulcerative Colitis Starter Package
+Adalimumab	Humira Pen Psoriasis Starter Package
+Adalimumab	Humira Pediatric
+Adalimumab	Humira Pediatric Crohn's Disease Starter Pack
+Rosuvastatin	Crestor
+Fluticasone	Advair Diskus
+Fluticasone	Advair HFA
+Etanercept	Enbrel
+Etanercept	Enbrel Prefilled Syringe
+Etanercept	Enbrel SureClick
+Infliximab	Remicade
+Infliximab	Inflectra
+Duloxetine	Cymbalta
+Duloxetine	Irenka
+Insulin Glargine	Basaglar KwikPen
+Insulin Glargine	Lantus
+Insulin Glargine	Lantus Solostar Pen
+Insulin Glargine	Toujeo SoloStar
+Insulin Glargine	Lantus OptiClik Cartridge
+Tiotropium	Spiriva
+Tiotropium	Spiriva Respimat 14 Dose
+Tiotropium	Spiriva Respimat 30 Dose
+Tiotropium	Spiriva Respimat 28
+Tiotropium	Spiriva Respimat
+Sitagliptin	Januvia

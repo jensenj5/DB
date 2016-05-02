@@ -1,0 +1,131 @@
+Administrator:
+
+firstName	LastName	Username	Password	Address
+Ibra	Cisse	icisse	BigBlack	87706 Washington AV
+Jason	Jensen	JJensen	WhiteAndNerdy	78548 Wahsington AV
+
+Clients:
+create table Clients (
+firstName Varchar(255),
+lastName Varchar(255),
+userName Varchar(255),
+password Varchar(255),
+address Varchar(255),
+state Varchar(2),
+zipCode Varchar(5),
+sex char(1)
+);
+
+firstName	LastName	Username	Password	Address		State	ZipCode 	Sex
+Smith	Anderson	sAnderson	qT1eNTBGYa	742 Broadway New Philadelphia	OH 	44663	M
+Clark	Wright	cWright	cedP8TMDeq	532 Highland Avenue Port Jefferson Station	NY 	11776	M	
+Mitchell	Johnson	mJohnson	DdFebCbA2w	970 Valley Drive Miami Gardens	FL 	33056	M
+Thomas	Phillips	tPhillilps	Iu3hAaZDJH	901 7th Street Peoria	IL 	61604	M
+Taylor	Robinson	tRobinson	6G0oJdYaBN	788 Route 5 Muskegon	MI 	4944	M
+King	Carter	kCarter	7ukTrGVrRH	592 Valley Drive Dorchester	MA 	02125	M
+Collins	Rodriguez	cRodriguez	Uz7Q3c6n0s	111 Orchard Street Staten Island	NY 	1030	F
+Davis	Martin	dMartin	IJ8RgrLRUO	623 Route 70 Akron	OH 	44312	M
+Hall	Adams	hAdams	MOfXDmg9mQ	100 Broad Street Kent	OH 	44240	M
+Campbell	Miller	cMiller	rLTs1wMDFe	633 Lafayette Street Leland	NC 	28451	M
+Thompson	Allen	tAllen	uV2B04I8DH	926 Briarwood Court Easley	SC 	29640	M
+Baker	Parker	bParker	4H0ygospiC	547 Devon Court Trenton	NJ 	08610	M
+Wilson	Garcia	wGarcia	eI1oKxjtWM	315 Route 32 Stratford	CT 	06614	F
+Young	Gonzalez	yGonzalez	G8O0OmbZsT	34 Sycamore Drive Cottage Grove	MN 	55016	M
+Evans	Moorn	eMoorn	oY3jSdhcew	800 Harrison Street Cranford	NJ 	07016	M
+Martinez	Hernandez	mHernandez	O3YcnPvW9j	578 High Street Spartanburg	SC 	29301	M
+Nelson	Edwards	nEdwards	AXDUZqKgcR	287 West Avenue Orange	NJ 	07050	M
+Lopez	Perez	lPerez	NSjwCvVtAC	888 Berkshire Drive Lakeville	MN 	55044	F
+Williams	Jackson	wJackson	xJpFsadqBL	389 Fairview Avenue Bettendorf	IA 	52722	F
+Lewis	Hill	lHill	lKhuCvaBjq	652 Country Club Road Anderson	SC 	29621	M
+Roberts	Jones	rJones	LT38xN2InH	526 Lexington Drive Baldwin	NY 	11510	M
+White	Lee	sLee	o3HO7BjFcW	818 Highland Avenue Shelbyville	TN 	37160	M
+Scott	Turner	sTurner	kibnV0OzR4	65 Hilltop Road Evansville	IN 	47711	M
+Brown	Harris	bHarris	dF49JR5QHI	865 Canal Street Tullahoma	TN 	37388	M
+Walker	Green	wGreen	opAeVRUxoN	360 Academy Street Ponte Vedra Beach	FL 	32082	F
+
+Medicine table:
+create table Medicine (
+brandName Varchar(255),
+genericName Varchar(255),
+Description Varchar(255),
+Category Varchar(255),
+ranking int,
+price Varchar(255)
+);
+BrandName	GenericName	Description	Usage	Ranking	Prices
+Pseudoephedrine AFRINOL, SUDAFED	uses for cold	Cold medicine	3	5.00
+Esomeprazole	NEXIUM	used for gas issues	gas	6	7.00
+Diazepam	VALIUM	used as muscle relaxer	muscle relax	7	12.50
+Acetaminophen	TYLENOL	used for headache	headache	7	6.40
+Minocycline	MINOCIN	use to stop infection	bacterial infec	9	3.00
+Haloperidol	HALDOL	mental problems	mental issue	5	74.00
+Cephalexin	KEFLEX	used for chest pain	chest pain	9	24.00
+Abilify	Abilify	used for mental	mental	5	56.99
+Nexium	Nexium	used for stomach pain	stomach pain	7	13.60
+Humira	Humira	used for stomach pain	stomach pain	6	14.80
+Crestor	Crestor	used for cholesterol	cholestoral	5	10.99
+Advair Diskus	Advair Diskus	used for asthma 	asthma	10	120.00
+Enbrel	Enbrel	used for arthritis	arthritis	7	65.40
+Remicade	Remicade	used for arthritis	arthritis	8	60.68
+Cymbalta	Cymbalta	used for depression	depression	9	105.00
+Copaxone	Copaxone	used for multiple sclerosis	3	97.50
+Neulasta	Neulasta	used to decrease infection infection	10	4.59
+Lantus Solostar	Lantus Solostar	used as insulant	diabetic	9	154.00
+Rituxan	Rituxan	used to treat cancer	cancer	7	140.56
+SpirivaHandihaler Spiriva Handihaler	used to relax muscles	muscles	5	25.00
+Januvia	Januvia	used to control sugar	diabetic	8	76.00
+Atripla	Atripla	used to treat HIV	HIV	8	459.99
+
+
+ Table:
+
+Symptoms	
+HIV	
+COLD
+GASSY
+CHEST PAIN
+HEART DESEASE
+DIABETIC
+MUSCLE ACHE
+HEADACHE
+STOMACH PAIN
+CHOLESTOROL
+ASTHMA
+INFECTION
+CANCER
+MENTAL ISSUES
+
+REVIEWS TABLE:
+
+ranking
+
+SALES VALUE TABLE:
+avg by location
+AVG by city
+
+INGREDIANT:
+
+BrandName	GenericName	Description	Ingredians	
+
+Pseudoephedrine AFRINOL, SUDAFED	uses for cold	Pseudoephedrine
+Esomeprazole	NEXIUM	used for gas issues	someprazole is the S-isomer of omeprazole, which is a mixture of the S- and R- isomers. (Initial U.S. approval of esomeprazole magnesium: 2001). Its molecular formula is (C17H18N3O3S)2Mg x 3 H2O with molecular weight of 767.2 as a trihydrate and 713.1 on an anhydrous basis	
+Diazepam	VALIUM	used as muscle relaxer	corn starch, pregelatinized starch and calcium stearate with the following dyes: 5-mg tablets contain FD&C Yellow No. 6 and D&C Yellow No. 10; 10-mg tablets contain FD&C Blue No. 1.	
+Acetaminophen	TYLENOL	used for headache	C8H9NO2	
+Minocycline	MINOCIN	use to stop infection	HCl equivalent to 50 mg or 100 mg of minocycline in microcrystalline cellulose. The capsule shells contain the following inactive ingredients: Blue 1, Gelatin, Titanium Dioxide
+Haloperidol	HALDOL	mental problems	0.5 mg, 1 mg, 2 mg, 5 mg, 10 mg or 20 mg of haloperidol, USP and contains the following inactive ingredients: colloidal silicon dioxide, FD&C Yellow 
+Cephalexin	KEFLEX	used for chest pain	250 mg, 500 mg or 750 mg of cephalexin. The capsules also contain carboxymethylcellulose sodium, D&C Yellow No. 10, dimethicone
+Abilify	Abilify	used for mental	include cornstarch, hydroxypropyl cellulose, lactose monohydrate, magnesium stearate, and microcrystalline cellulose.
+Nexium	Nexium	used for stomach pain	contains 20 mg, or 40 mg of esomeprazole (present as 22.3 mg, or 44.5 mg esomeprazole magnesium trihydrate) in the form of enteric-coated granules with the following inactive ingredients: glyceryl monostearate 40-55
+Humira	Humira	used for stomach pain	adalimumab 20 mg, citric acid monohydrate 0.52 mg, dibasic sodium phosphate dihydrate 0.61 mg, 
+Crestor	Crestor	used for cholesterol	adalimumab 20 mg, citric acid monohydrate 0.52 mg, dibasic sodium phosphate dihydrate 0.61 mg, 
+Advair Diskus	Advair Diskus	used for asthma 	Long-acting beta2-adrenergic agonists (LABA), such as salmeterol, one of the active ingredients in ADVAIR DISKUS®, increase the risk of asthma-related death
+Enbrel	Enbrel	used for arthritis	active ingredient etanercept, which is a type of medicine called a TNF blocker. It works by suppressing the process of inflammation
+Remicade	Remicade	used for arthritis	The active ingredient is Infliximab. The inactive ingredients in REMICADE include: sucrose, polysorbate 80, monobasic sodium phosphate monohydrate, and dibasic sodium phosphate dihydrate. No preservatives are present.	
+Cymbalta	Cymbalta	used for depression	FD&C Blue No. 2, gelatin, hypromellose, hydroxypropyl methylcellulose acetate succinate, sodium lauryl sulfate, sucrose, sugar spheres, talc,
+Copaxone	Copaxone	used for multiple sclerosis	Glatiramer acetate, the active ingredient of COPAXONE, consists of the acetate salts of synthetic polypeptides, containing four naturally occurring amino acids: L-glutamic acid
+Neulasta	Neulasta	used to decrease infection	pegfilgrastim in a sterile, clear, colorless, preservative-free solution containing acetate, sorbitol, polysorbate 20, and sodium.
+Lantus Solostar	Lantus Solostar	used as insulant	LANTUS (insulin glargine [rDNA origin] injection) is a sterile solution of insulin glargine for use as a subcutaneous injection. Insulin glargine is a recombinant human insulin analog that is a long-acting (up to 24-hour duration of action), parenteral blood-glucose-lowering agent	
+Rituxan	Rituxan	used to treat cancer	The product is formulated in polysorbate 80 (0.7 mg/mL), sodium citrate dihydrate (7.35 mg/mL), sodium chloride (9 mg/mL) and Water for Injection. The pH is 6.5.	
+SpirivaHandihaler Spiriva Handihaler	used to relax muscles	tiotropium. The drug substance, tiotropium bromide monohydrate, is an anticholinergic with specificity for muscarinic 
+Januvia	Januvia	used to control sugar	32.13, 64.25, or 128.5 mg of sitagliptin phosphate monohydrate, which is equivalent to 25, 50, or 100 mg, respectively,
+Atripla	Atripla	used to treat HIV

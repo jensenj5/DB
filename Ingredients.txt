@@ -1,0 +1,22 @@
+Pseudoephedrine Pseudoephedrine
+Esomeprazole	NEXIUM	used for gas issues	someprazole is the S-isomer of omeprazole, which is a mixture of the S- and R- isomers. (Initial U.S. approval of esomeprazole magnesium: 2001). Its molecular formula is (C17H18N3O3S)2Mg x 3 H2O with molecular weight of 767.2 as a trihydrate and 713.1 on an anhydrous basis	
+Diazepam	VALIUM	used as muscle relaxer	corn starch, pregelatinized starch and calcium stearate with the following dyes: 5-mg tablets contain FD&C Yellow No. 6 and D&C Yellow No. 10; 10-mg tablets contain FD&C Blue No. 1.	
+Acetaminophen	TYLENOL	used for headache	C8H9NO2	
+Minocycline	MINOCIN	use to stop infection	HCl equivalent to 50 mg or 100 mg of minocycline in microcrystalline cellulose. The capsule shells contain the following inactive ingredients: Blue 1, Gelatin, Titanium Dioxide
+Haloperidol	HALDOL	mental problems	0.5 mg, 1 mg, 2 mg, 5 mg, 10 mg or 20 mg of haloperidol, USP and contains the following inactive ingredients: colloidal silicon dioxide, FD&C Yellow 
+Cephalexin	KEFLEX	used for chest pain	250 mg, 500 mg or 750 mg of cephalexin. The capsules also contain carboxymethylcellulose sodium, D&C Yellow No. 10, dimethicone
+Abilify	Abilify	used for mental	include cornstarch, hydroxypropyl cellulose, lactose monohydrate, magnesium stearate, and microcrystalline cellulose.
+Nexium	Nexium	used for stomach pain	contains 20 mg, or 40 mg of esomeprazole (present as 22.3 mg, or 44.5 mg esomeprazole magnesium trihydrate) in the form of enteric-coated granules with the following inactive ingredients: glyceryl monostearate 40-55
+Humira	Humira	used for stomach pain	adalimumab 20 mg, citric acid monohydrate 0.52 mg, dibasic sodium phosphate dihydrate 0.61 mg, 
+Crestor	Crestor	used for cholesterol	adalimumab 20 mg, citric acid monohydrate 0.52 mg, dibasic sodium phosphate dihydrate 0.61 mg, 
+Advair Diskus	Advair Diskus	used for asthma 	Long-acting beta2-adrenergic agonists (LABA), such as salmeterol, one of the active ingredients in ADVAIR DISKUS®, increase the risk of asthma-related death
+Enbrel	Enbrel	used for arthritis	active ingredient etanercept, which is a type of medicine called a TNF blocker. It works by suppressing the process of inflammation
+Remicade	Remicade	used for arthritis	The active ingredient is Infliximab. The inactive ingredients in REMICADE include: sucrose, polysorbate 80, monobasic sodium phosphate monohydrate, and dibasic sodium phosphate dihydrate. No preservatives are present.	
+Cymbalta	Cymbalta	used for depression	FD&C Blue No. 2, gelatin, hypromellose, hydroxypropyl methylcellulose acetate succinate, sodium lauryl sulfate, sucrose, sugar spheres, talc,
+Copaxone	Copaxone	used for multiple sclerosis	Glatiramer acetate, the active ingredient of COPAXONE, consists of the acetate salts of synthetic polypeptides, containing four naturally occurring amino acids: L-glutamic acid
+Neulasta	Neulasta	used to decrease infection	pegfilgrastim in a sterile, clear, colorless, preservative-free solution containing acetate, sorbitol, polysorbate 20, and sodium.
+Lantus Solostar	Lantus Solostar	used as insulant	LANTUS (insulin glargine [rDNA origin] injection) is a sterile solution of insulin glargine for use as a subcutaneous injection. Insulin glargine is a recombinant human insulin analog that is a long-acting (up to 24-hour duration of action), parenteral blood-glucose-lowering agent	
+Rituxan	Rituxan	used to treat cancer	The product is formulated in polysorbate 80 (0.7 mg/mL), sodium citrate dihydrate (7.35 mg/mL), sodium chloride (9 mg/mL) and Water for Injection. The pH is 6.5.	
+SpirivaHandihaler Spiriva Handihaler	used to relax muscles	tiotropium. The drug substance, tiotropium bromide monohydrate, is an anticholinergic with specificity for muscarinic 
+Januvia	Januvia	used to control sugar	32.13, 64.25, or 128.5 mg of sitagliptin phosphate monohydrate, which is equivalent to 25, 50, or 100 mg, respectively,
+Atripla	Atripla	used to treat HIV
