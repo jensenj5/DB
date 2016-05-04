@@ -1,3 +1,5 @@
+mysql -u root -proot
+
 drop database DB;
 
 create database DB;
@@ -7,7 +9,7 @@ use DB;
 create table Admins (
 First_Name VARCHAR(255),
 Last_Name VARCHAR(255),
-User_Name VARCHAR(255),
+User_Name VARCHAR(255) NOT NULL Primary Key,
 Password VARCHAR(255),
 Address VARCHAR(255)
 );
@@ -24,26 +26,28 @@ password VARCHAR(255)
 
 load data infile '/tmp/Clients.txt' into table Clients;
 
-create table Ranking (
-Generic VARCHAR(255),
-Rank int
+create table Symptoms (
+Symptom VARCHAR(255),
+Generic VARCHAR(255) NOT NULL Primary Key
 );
 
-load data infile '/tmp/Ranking.txt' into table Ranking;
+load data infile '/tmp/Med.txt' into table Symptoms;
+
+create table SideEffects (
+Generic VARCHAR(255),
+Foreign Key(Generic) REFERENCES Symptoms(Generic),
+Side_Effect VARCHAR(255)
+);
+
+load data infile '/tmp/Side.txt' into table SideEffects;
 
 create table Medicine (
 Generic VARCHAR(255),
+Foreign Key(Generic) REFERENCES Symptoms(Generic),
 Brand VARCHAR(255)
 );
 
 load data infile '/tmp/Med2.txt' into table Medicine;
-
-create table Symptoms (
-Symptom VARCHAR(255),
-Generic VARCHAR(255)
-);
-
-load data infile '/tmp/Med.txt' into table Symptoms;
 
 create table Suggestions (
 User_Name VARCHAR(255),
@@ -57,16 +61,20 @@ create table Reviews (
 User_Name VARCHAR(255),
 Foreign Key(User_Name) REFERENCES Clients(User_Name),
 Review VARCHAR(255),
-Generic VARCHAR(255)
+Generic VARCHAR(255),
+Foreign Key(Generic) REFERENCES Symptoms(Generic),
+Rating INT
 );
 
 load data infile '/tmp/reviews.txt' into table Reviews;
+
+CREATE VIEW Rating AS SELECT Medicine.Generic, IFNULL(ROUND(AVG(Reviews.Rating), 2), 0) AS Rating FROM Medicine LEFT OUTER JOIN Reviews ON Medicine.Generic = Reviews.Generic GROUP BY Generic;
 
 
 select * from  Admins;
 select * from  Clients;
 select * from  Medicine;
-select * from  Ranking;
+select * from  SideEffects;
 select * from  Symptoms;
 select * from  Reviews;
 select * from  Suggestions;

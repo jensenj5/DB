@@ -2,7 +2,6 @@ cold	Pseudoephedrine
 heartburn	Esomeprazole
 anxiety	Diazepam
 pain relief	Acetaminophen
-fever reducer	Acetaminophen
 antibiotic	Minocycline
 antibiotic	Cephalexin
 antipsychotic	Haloperidol

@@ -25,9 +25,10 @@ DROP TABLE IF EXISTS `Admins`;
 CREATE TABLE `Admins` (
   `First_Name` varchar(255) DEFAULT NULL,
   `Last_Name` varchar(255) DEFAULT NULL,
-  `User_Name` varchar(255) DEFAULT NULL,
+  `User_Name` varchar(255) NOT NULL,
   `Password` varchar(255) DEFAULT NULL,
-  `Address` varchar(255) DEFAULT NULL
+  `Address` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`User_Name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -91,27 +92,18 @@ INSERT INTO `Medicine` VALUES ('Pseudoephedrine','Chlor Trimeton Nasal Decongest
 UNLOCK TABLES;
 
 --
--- Table structure for table `Ranking`
+-- Temporary table structure for view `Rating`
 --
 
-DROP TABLE IF EXISTS `Ranking`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `Ranking` (
-  `Generic` varchar(255) DEFAULT NULL,
-  `Rank` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `Ranking`
---
-
-LOCK TABLES `Ranking` WRITE;
-/*!40000 ALTER TABLE `Ranking` DISABLE KEYS */;
-INSERT INTO `Ranking` VALUES ('Pseudoephedrine',8),('Esomeprazole',5),('Diazepam',6),('Acetaminophen',9),('Minocycline',6),('Haloperidol',8),('Cephalexin',9),('Aripiprazole',10),('Adalimumab',7),('Rosuvastatin',6),('Fluticasone',9),('Etanercept',7),('Infliximab',4),('Duloxetine',5),('Insulin Glargine',6),('Tiotropium',7),('Sitagliptin',6);
-/*!40000 ALTER TABLE `Ranking` ENABLE KEYS */;
-UNLOCK TABLES;
+DROP TABLE IF EXISTS `Rating`;
+/*!50001 DROP VIEW IF EXISTS `Rating`*/;
+SET @saved_cs_client     = @@character_set_client;
+SET character_set_client = utf8;
+/*!50001 CREATE TABLE `Rating` (
+  `Generic` tinyint NOT NULL,
+  `Rating` tinyint NOT NULL
+) ENGINE=MyISAM */;
+SET character_set_client = @saved_cs_client;
 
 --
 -- Table structure for table `Reviews`
@@ -124,6 +116,7 @@ CREATE TABLE `Reviews` (
   `User_Name` varchar(255) DEFAULT NULL,
   `Review` varchar(255) DEFAULT NULL,
   `Generic` varchar(255) DEFAULT NULL,
+  `Rating` int(11) DEFAULT NULL,
   KEY `User_Name` (`User_Name`),
   CONSTRAINT `Reviews_ibfk_1` FOREIGN KEY (`User_Name`) REFERENCES `Clients` (`User_Name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -135,8 +128,31 @@ CREATE TABLE `Reviews` (
 
 LOCK TABLES `Reviews` WRITE;
 /*!40000 ALTER TABLE `Reviews` DISABLE KEYS */;
-INSERT INTO `Reviews` VALUES ('sAnderson','This medicine is super awesome for cold.','Pseudoephedrine'),('cWright','I took this medicine when I had headache, and it helped me out good.','Acetaminophen'),('mJohnson','This medicine is not for everyone who has issues with gas, but it worked for me.','Esomeprazole'),('tPhillilps','Had asthma, hate inhalers, but this medicine works really well for me.','Fluticasone'),('kCarter','Cut myself while working on my yard.  This antibiotic works well for me.','Minocycline'),('dMartin','My chest Pain are terrible for the most, none of the previous pills worked until this one.','Esomeprazole'),('wJackson','I always get better sleep with the muscle relaxation rub I get.','Acetaminophen'),('rJones','Always worked on cars and have muscle pain, but now I have something to releave it.','Acetaminophen');
+INSERT INTO `Reviews` VALUES ('sAnderson','This medicine is super awesome for cold.','Pseudoephedrine',10),('cWright','I took this medicine when I had headache, and it helped me out good.','Acetaminophen',9),('mJohnson','This medicine is not for everyone who has issues with gas, but it worked for me.','Esomeprazole',8),('tPhillilps','Had asthma, hate inhalers, but this medicine works really well for me.','Fluticasone',9),('kCarter','Cut myself while working on my yard.  This antibiotic works well for me.','Minocycline',7),('dMartin','My chest Pain are terrible for the most, none of the previous pills worked until this one.','Esomeprazole',9),('wJackson','I always get better sleep with the muscle relaxation rub I get.','Acetaminophen',8),('rJones','Always worked on cars and have muscle pain, but now I have something to releave it.','Acetaminophen',9),('lHill','Demo review!','Diazepam',9);
 /*!40000 ALTER TABLE `Reviews` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `SideEffects`
+--
+
+DROP TABLE IF EXISTS `SideEffects`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `SideEffects` (
+  `Generic` varchar(255) DEFAULT NULL,
+  `Side_Effect` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `SideEffects`
+--
+
+LOCK TABLES `SideEffects` WRITE;
+/*!40000 ALTER TABLE `SideEffects` DISABLE KEYS */;
+INSERT INTO `SideEffects` VALUES ('Pseudoephedrine','Nervousness'),('Pseudoephedrine','Excitability'),('Pseudoephedrine','Dizziness'),('Pseudoephedrine','Insomnia'),('Pseudoephedrine','Stomach pain'),('Pseudoephedrine','Difficulty breathing'),('Pseudoephedrine','Changes in heart rate and activity'),('Esomeprazole','dizziness'),('Esomeprazole','confusion'),('Esomeprazole','fast, uneven heart rate'),('Esomeprazole','jerking muscle movements'),('Esomeprazole','jittery feeling'),('Esomeprazole','diarrhea'),('Esomeprazole','muscle cramps'),('Esomeprazole','muscle weakness'),('Esomeprazole','cough'),('Diazepam','drowsiness'),('Diazepam','dizziness'),('Diazepam','spinning sensation'),('Diazepam','fatigue'),('Diazepam','constipation'),('Diazepam','ataxia'),('Diazepam','memory problems'),('Diazepam','restlessness or irritability'),('Diazepam','muscle weakness'),('Diazepam','nausea'),('Diazepam','drooling or dry mouth'),('Diazepam','slurred speech'),('Diazepam','blurred or double vision'),('Diazepam','skin rash'),('Diazepam','itching'),('Diazepam','loss of interest in sex.'),('Acetaminophen','nausea'),('Acetaminophen','upper stomach pain'),('Acetaminophen','itching'),('Acetaminophen','loss of appetite'),('Minocycline','joint pain'),('Minocycline','muscle pain'),('Cephalexin','diarrhea'),('Cephalexin','dizziness'),('Cephalexin','tiredness'),('Cephalexin','headache'),('Cephalexin','stomach pain'),('Cephalexin','abdominal pain'),('Cephalexin','joint pain'),('Cephalexin','vaginal itching or discharge'),('Cephalexin','nausea/vomiting'),('Cephalexin','itching/swelling'),('Cephalexin','rash'),('Haloperidol','nausea'),('Haloperidol','vomiting'),('Haloperidol','diarrhea'),('Haloperidol','dry mouth'),('Haloperidol','nervousness'),('Haloperidol','headache'),('Haloperidol','dizziness'),('Haloperidol','spinning sensation'),('Haloperidol','drowsiness'),('Aripiprazole','dizziness'),('Aripiprazole','weakness'),('Aripiprazole','lightheadedness'),('Aripiprazole','nausea'),('Aripiprazole','vomiting'),('Aripiprazole','stomach pain'),('Aripiprazole','tiredness'),('Aripiprazole','excess saliva or drooling'),('Aripiprazole','choking or trouble swallowing'),('Aripiprazole','blurred vision'),('Adalimumab','redness'),('Adalimumab','itching'),('Adalimumab','pain'),('Adalimumab','bruising or swelling at the injection site'),('Adalimumab','headache'),('Adalimumab','stuffy nose'),('Adalimumab','sinus pain'),('Adalimumab','or stomach pain'),('Etanercept','redness'),('Etanercept','itching'),('Etanercept','pain'),('Etanercept','swelling at the site of injection'),('Infliximab','infection'),('Infliximab','fever'),('Infliximab','chills'),('Infliximab','flu symptoms'),('Infliximab','confusion'),('Infliximab','pain'),('Infliximab','warmth'),('Infliximab','redness of your skin'),('Fluticasone','severe or ongoing nosebleeds'),('Tiotropium','constipation'),('Tiotropium','upset stomach'),('Tiotropium','vomiting'),('Glargine','Hypoglycemia'),('Sitagliptin','pancreatitis'),('Sitagliptin','severe pain in your upper stomach spreading to your back'),('Sitagliptin','nausea and vomiting'),('Sitagliptin','loss of appetite'),('Sitagliptin','fast heart rate'),('Rosuvastatin','muscle pain'),('Rosuvastatin','muscle tenderness'),('Rosuvastatin','muscle weakness'),('Duloxetine','nausea'),('Duloxetine','upper stomach pain'),('Duloxetine','itching'),('Duloxetine','loss of appetite'),('Duloxetine','dark urine'),('Duloxetine','clay-colored stools'),('Duloxetine','jaundice');
+/*!40000 ALTER TABLE `SideEffects` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -186,6 +202,25 @@ LOCK TABLES `Symptoms` WRITE;
 INSERT INTO `Symptoms` VALUES ('cold','Pseudoephedrine'),('heartburn','Esomeprazole'),('anxiety','Diazepam'),('pain relief','Acetaminophen'),('fever reducer','Acetaminophen'),('antibiotic','Minocycline'),('antibiotic','Cephalexin'),('antipsychotic','Haloperidol'),('antipsychotic','Aripiprazole'),('arthritis','Adalimumab'),('arthritis','Etanercept'),('arthritis','Infliximab'),('asthma','Fluticasone'),('asthma','Tiotropium'),('diabetes','Insulin Glargine'),('diabetes','Sitagliptin'),('cholesterol','Rosuvastatin'),('depression','Duloxetine');
 /*!40000 ALTER TABLE `Symptoms` ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- Final view structure for view `Rating`
+--
+
+/*!50001 DROP TABLE IF EXISTS `Rating`*/;
+/*!50001 DROP VIEW IF EXISTS `Rating`*/;
+/*!50001 SET @saved_cs_client          = @@character_set_client */;
+/*!50001 SET @saved_cs_results         = @@character_set_results */;
+/*!50001 SET @saved_col_connection     = @@collation_connection */;
+/*!50001 SET character_set_client      = utf8 */;
+/*!50001 SET character_set_results     = utf8 */;
+/*!50001 SET collation_connection      = utf8_general_ci */;
+/*!50001 CREATE ALGORITHM=UNDEFINED */
+/*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
+/*!50001 VIEW `Rating` AS select `Medicine`.`Generic` AS `Generic`,ifnull(round(avg(`Reviews`.`Rating`),2),0) AS `Rating` from (`Medicine` left join `Reviews` on((`Medicine`.`Generic` = `Reviews`.`Generic`))) group by `Medicine`.`Generic` */;
+/*!50001 SET character_set_client      = @saved_cs_client */;
+/*!50001 SET character_set_results     = @saved_cs_results */;
+/*!50001 SET collation_connection      = @saved_col_connection */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -196,4 +231,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-05-02 11:20:19
+-- Dump completed on 2016-05-04  8:48:07

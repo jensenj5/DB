@@ -1,0 +1,108 @@
+Pseudoephedrine	Nervousness
+Pseudoephedrine	Excitability
+Pseudoephedrine	Dizziness
+Pseudoephedrine	Insomnia
+Pseudoephedrine	Stomach pain
+Pseudoephedrine	Difficulty breathing
+Pseudoephedrine	Changes in heart rate and activity
+Esomeprazole	dizziness
+Esomeprazole	confusion
+Esomeprazole	fast, uneven heart rate
+Esomeprazole	jerking muscle movements
+Esomeprazole	jittery feeling
+Esomeprazole	diarrhea
+Esomeprazole	muscle cramps
+Esomeprazole	muscle weakness
+Esomeprazole	cough
+Diazepam	drowsiness
+Diazepam	dizziness
+Diazepam	spinning sensation
+Diazepam	fatigue
+Diazepam	constipation
+Diazepam	ataxia
+Diazepam	memory problems
+Diazepam	restlessness or irritability
+Diazepam	muscle weakness
+Diazepam	nausea
+Diazepam	drooling or dry mouth
+Diazepam	slurred speech
+Diazepam	blurred or double vision
+Diazepam	skin rash
+Diazepam	itching
+Diazepam	loss of interest in sex.
+Acetaminophen	nausea
+Acetaminophen	upper stomach pain
+Acetaminophen	itching
+Acetaminophen	loss of appetite
+Minocycline	joint pain
+Minocycline	muscle pain
+Cephalexin	diarrhea
+Cephalexin	dizziness
+Cephalexin	tiredness
+Cephalexin	headache
+Cephalexin	stomach pain
+Cephalexin	abdominal pain
+Cephalexin	joint pain
+Cephalexin	vaginal itching or discharge
+Cephalexin	nausea/vomiting
+Cephalexin	itching/swelling
+Cephalexin	rash
+Haloperidol	nausea
+Haloperidol	vomiting
+Haloperidol	diarrhea
+Haloperidol	dry mouth
+Haloperidol	nervousness
+Haloperidol	headache
+Haloperidol	dizziness
+Haloperidol	spinning sensation
+Haloperidol	drowsiness
+Aripiprazole	dizziness
+Aripiprazole	weakness
+Aripiprazole	lightheadedness
+Aripiprazole	nausea
+Aripiprazole	vomiting
+Aripiprazole	stomach pain
+Aripiprazole	tiredness
+Aripiprazole	excess saliva or drooling
+Aripiprazole	choking or trouble swallowing
+Aripiprazole	blurred vision
+Adalimumab	redness
+Adalimumab	itching
+Adalimumab	pain
+Adalimumab	bruising or swelling at the injection site
+Adalimumab	headache
+Adalimumab	stuffy nose
+Adalimumab	sinus pain
+Adalimumab	or stomach pain
+Etanercept	redness
+Etanercept	itching
+Etanercept	pain
+Etanercept	swelling at the site of injection
+Infliximab	infection
+Infliximab	fever
+Infliximab	chills
+Infliximab	flu symptoms
+Infliximab	confusion
+Infliximab	pain
+Infliximab	warmth
+Infliximab	redness of your skin
+Fluticasone	severe or ongoing nosebleeds
+Tiotropium	constipation
+Tiotropium	upset stomach
+Tiotropium	vomiting
+Insulin Glargine	Hypoglycemia
+Sitagliptin	pancreatitis
+Sitagliptin	severe pain in your upper stomach spreading to your back
+Sitagliptin	nausea and vomiting
+Sitagliptin	loss of appetite
+Sitagliptin	fast heart rate
+Rosuvastatin	muscle pain
+Rosuvastatin	muscle tenderness
+Rosuvastatin	muscle weakness
+Duloxetine	nausea
+Duloxetine	upper stomach pain
+Duloxetine	itching
+Duloxetine	loss of appetite
+Duloxetine	dark urine
+Duloxetine	clay-colored stools
+Duloxetine	jaundice

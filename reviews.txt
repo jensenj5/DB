@@ -1,8 +1,8 @@
-sAnderson	This medicine is super awesome for cold.	Pseudoephedrine
-cWright	I took this medicine when I had headache, and it helped me out good.	Acetaminophen
-mJohnson	This medicine is not for everyone who has issues with gas, but it worked for me.	Esomeprazole
-tPhillilps	Had asthma, hate inhalers, but this medicine works really well for me.	Fluticasone
-kCarter	Cut myself while working on my yard.  This antibiotic works well for me.	Minocycline
-dMartin	My chest Pain are terrible for the most, none of the previous pills worked until this one.	Esomeprazole
-wJackson	I always get better sleep with the muscle relaxation rub I get.	Acetaminophen
-rJones	Always worked on cars and have muscle pain, but now I have something to releave it.	Acetaminophen
+sAnderson	This medicine is super awesome for cold.	Pseudoephedrine	10
+cWright	I took this medicine when I had headache, and it helped me out good.	Acetaminophen	9
+mJohnson	This medicine is not for everyone who has issues with gas, but it worked for me.	Esomeprazole	8
+tPhillilps	Had asthma, hate inhalers, but this medicine works really well for me.	Fluticasone	9
+kCarter	Cut myself while working on my yard.  This antibiotic works well for me.	Minocycline	7
+dMartin	My chest Pain are terrible for the most, none of the previous pills worked until this one.	Esomeprazole	9
+wJackson	I always get better sleep with the muscle relaxation rub I get.	Acetaminophen	8
+rJones	Always worked on cars and have muscle pain, but now I have something to releave it.	Acetaminophen	9
