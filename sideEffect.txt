@@ -1,0 +1,16 @@
+Pseudoephedrine, Nervousness,Excitability,Dizziness,Insomnia,Stomach pain,Difficulty breathing,Changes in heart rate and activity
+Esomeprazole, dizziness,confusion,fast,uneven heart rate,jerking muscle movements,jittery feeling,diarrhea that is watery bloody,muscle cramps,muscle weakness,limp feeling,cough,choking
+Diazepam,drowsiness, dizziness, spinning sensation, fatigue, constipation, ataxia, memory problems, restlessness or irritability, muscle weakness, nausea, drooling or dry mouth, slurred speech, blurred or double vision, skin rash, itching, or loss of interest in sex.
+Acetaminophen, nausea, upper stomach pain, itching, loss of appetite
+Minocycline,joint or muscle pain, Cephalexin,diarrhea, dizziness, tiredness, headache, stomach upset, abdominal pain, joint pain, vaginal itching or discharge, nausea/vomiting, itching/swelling, and rash. Keflex dosage depends on the condition being treated
+Haloperidol, nausea, vomiting, diarrhea, dry mouth, nervousness, headache, dizziness, spinning sensation, drowsiness
+Aripiprazole, dizziness, weakness, lightheadedness, nausea, vomiting, stomach upset, tiredness, excess saliva or drooling, choking or trouble swallowing, blurred vision
+Adalimumab, redness, itching, pain, bruising, or swelling at the injection site; headache, stuffy nose, sinus pain, or stomach pain
+Etanercept, redness, itching, pain, or swelling at the site of injection
+Infliximab, infection (fever, chills, flu symptoms, confusion, or pain, warmth, or redness of your skin)
+Fluticasone, severe or ongoing nosebleeds
+Tiotropium, constipation, upset stomach, vomiting
+Glargine, Hypoglycemia, or low blood sugar
+Sitagliptin, pancreatitis, severe pain in your upper stomach spreading to your back, nausea and vomiting, loss of appetite, fast heart rate
+Rosuvastatin, unexplained muscle pain, tenderness, or weakness
+Duloxetine, nausea, upper stomach pain, itching, loss of appetite, dark urine, clay-colored stools, jaundice (yellowing of the skin or eyes)
